@@ -12,4 +12,12 @@
 
     <artifactId>rgo-wm-common-test-utils-random</artifactId>
 
+    <dependencies>
+        <!-- utils -->
+        <dependency>
+            <groupId>com.google.code.findbugs</groupId>
+            <artifactId>jsr305</artifactId>
+        </dependency>
+        <!-- /utils -->
+    </dependencies>
 </project>
