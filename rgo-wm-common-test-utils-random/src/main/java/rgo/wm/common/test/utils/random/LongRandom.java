@@ -10,11 +10,21 @@ public final class LongRandom {
 
     @Nonnull
     public static Long randomLong() {
-        return ThreadLocalRandom.current().nextLong();
+        return randomLong(Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    @Nonnull
+    public static Long randomLong(long origin, long bound) {
+        return ThreadLocalRandom.current().nextLong(origin, bound);
+    }
+
+    @Nonnull
+    public static Long randomLongInclusive(long origin, long bound) {
+        return randomLong(origin, bound + 1);
     }
 
     @Nonnull
     public static Long randomPositiveLong() {
-        return ThreadLocalRandom.current().nextLong(1, Long.MAX_VALUE);
+        return randomLong(1, Long.MAX_VALUE);
     }
 }
