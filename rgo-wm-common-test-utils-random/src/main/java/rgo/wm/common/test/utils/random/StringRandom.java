@@ -12,4 +12,9 @@ public final class StringRandom {
     public static String randomString() {
         return UUID.randomUUID().toString();
     }
+
+    @Nonnull
+    public static String randomUUIDAsString() {
+        return UUID.randomUUID().toString();
+    }
 }
