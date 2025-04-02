@@ -1,6 +1,6 @@
 package rgo.wm.common.test.utils.random;
 
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 import java.util.concurrent.ThreadLocalRandom;
 
 public final class ShortRandom {
